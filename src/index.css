@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  font-family: "Outfit", sans-serif;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+body{
+  padding: 20px;
+  background-color: #202B34;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.game{
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 50px;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+main{
+  display: flex;
+  gap: 10px;
+}
+.number{
+  font-size: 120px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+.binary-btn{
+  background-color: #F59827;
+  border: 0;
+  height: 55px;
+  width: 55px;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.comprobar{
+  height: 50px;
+  width: 150px;
+  border: 2px solid #202B34;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.5s ease-out;
+}
+.comprobar:hover{
+  background-color: rgb(238, 238, 238);
+}
+.info{
+  font-size: 30px;
+}
+.wrapper{
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  background-color: hsla(0, 0%, 13%, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal{
+  background-color: white;
+  padding: 15px;
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap:15px;
+}
+.close-btn{
+  border:none;
+  background-color: #202B34;
+  color:white;
+  border-radius: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+}
+.close-btn:hover{
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 360px){
+  .game{
+    width: 300px;
+    height: 400px;
+  }
+  .binary-btn{
+    width: 25px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .number{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: -10px;
+  }
+  .info{
+    font-size: 20px;
+  }
+  body{
+    
+  }
+  .comprobar{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+  }
+}
