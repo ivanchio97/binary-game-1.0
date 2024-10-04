@@ -129,4 +129,7 @@ main{
     width: 120px;
     font-size: 15px;
   }
+  body{
+    align-items: flex-start;
+  }
 }
